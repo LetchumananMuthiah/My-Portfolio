@@ -1,0 +1,297 @@
+html{
+    scroll-padding-top: 67px;
+    scroll-behavior: smooth;
+}
+body{
+    padding-top: 68px;
+}
+
+#navbarList{
+    font-size: 18px;
+}
+
+/*Introduction*/
+#intro{
+    background-image: linear-gradient(0deg,rgb(227,227,219),rgb(145, 141, 141));
+ /*background-color:rgb(227,227,219);*/
+}
+#myname{
+    font-family:poppins,sans-serif;
+    font-weight:700;
+    font-size: 8vw;
+    color: rgba(0,0,0,0.6);
+    line-height: 8vw;
+    margin-top: 15px;
+    margin-bottom: 2vw;
+}
+#myposition{
+    font-size: 4vw;
+}
+.imgCont{
+    margin-bottom: 2vw ;
+}
+
+/*About,Skills,Hobbies and Experience*/
+#about{
+    background-image:linear-gradient(180deg,lightblue,rgb(39, 204, 204));
+}
+#skills{
+    background-image:linear-gradient(180deg,lightgreen,rgb(45, 158, 96));
+}
+#hobbies{
+    background-image:linear-gradient(180deg,rgb(252, 227, 0),rgb(179, 138, 37));
+}
+#experience{
+    background-image:linear-gradient(180deg,rgb(252, 168, 13),rgb(255, 94, 0));
+}
+#contact{
+    background-image:linear-gradient(180deg,rgb(255, 91, 62),rgb(184, 33, 33));
+}
+
+#aboutHead,#skillsHead,#hobbiesHead,#experienceHead,#contactHead{
+    font-family: poppins,sans-serif;
+    font-weight: 700;
+    font-size: 7vw;
+}
+#aboutHead{
+    color: rgb(16, 160, 160);
+}
+#skillsHead{
+    color: mediumseagreen;
+}
+#hobbiesHead{
+    color:rgb(199, 166, 17);
+    
+}
+#experienceHead{
+    color: rgb(255, 120, 0);
+}
+#contactHead{
+    color:rgb(202, 38, 38);
+}
+#aboutInfo,#hobbiesInfo,#experienceInfo,#contactInfo{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:4vw;
+    font-weight:500;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/*Skills cards - common*/
+.card-img-overlay{
+    background-color:rgba(56, 197, 120, 0.7);
+    transition: 0.4s;
+    opacity:1;
+    padding: 12px;
+}
+.card-img-overlay .card-title{
+    margin-bottom: 4px;
+    text-align: center;
+    font-family: poppins,sans-serif;
+    font-weight: 700;
+    font-size: 4.5vw;
+}
+.card-img-overlay ul{
+    font-size: 4vw;
+    font-family: poppins,sans-serif;
+    margin:0;
+    padding-left:20px;
+    list-style-type:square;
+}
+.card-img-overlay .card-title{
+    color:rgb(184, 49, 49);
+}
+
+/*experience-links*/
+#fb,#soc,#github,#tensors{
+    font-family:poppins,sans-serif;
+    font-size: 4vw;
+    
+}
+#fb{
+    color:#4267B2;
+    border-color: rgb(234, 234, 243);
+    background-color:white;      
+}
+
+#soc{
+    color:orange;
+    background-color:rgb(33, 31, 31);
+    border-color:rgb(33, 31, 31);
+}
+#github{
+    color:linen;
+    background-color:rgb(33, 31, 31);
+    border-color:rgb(33, 31, 31);
+}
+#tensors{
+    color:rgb(30, 168, 92);
+    border-color: rgb(234, 234, 243);
+    background-color:rgb(234, 234, 243); 
+}
+
+/*contact-links*/
+#mail,#instagram,#quora{
+    color:rgb(33, 31, 31);
+}
+
+.footer{
+    background-color:rgb(33, 31, 31);
+    color:silver;
+    font-family: poppins,sans-serif;
+    text-align: center;
+    height:25px;
+    
+}
+/*sm-above*/
+@media screen and (min-width:576px){
+    #aboutInfo,#hobbiesInfo,#experienceInfo,#contactInfo{
+        font-size:3vw;
+    }
+    .card-img-overlay{
+        padding:20px;
+    } 
+    .card-img-overlay .card-title{
+        font-size: 4vw;
+    } 
+    .card-img-overlay li{
+        font-size: 3vw;
+    }
+    #fb,#soc,#github,#tensors{
+        font-size:3vw;
+    }
+}
+
+/*md-above*/
+@media screen and (min-width:768px){
+    #intro{
+        background-image: linear-gradient(270deg,rgb(227,227,219),rgb(145, 141, 141));
+    }
+    #myposition{
+        font-size: 1.8vw;
+        margin-top:0vw
+    }
+    #myname{
+        font-size: 7vw;
+        margin-top: 40px;
+        margin-bottom:0;
+        line-height: 7vw;
+    }
+    #about .row,#skills .row,#hobbiesMainRow,#experienceMainRow{
+        min-height:400px;
+    }
+    #aboutHead,#skillsHead,#hobbiesHead,#experienceHead,#contactHead{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    #hobbiesHead{
+        color:rgb(245, 182, 8);
+    }
+    #experienceHead{
+        color: rgb(255, 115, 0);
+    }
+    #contactHead{
+        color:rgb(224, 48, 48);
+    }
+    #aboutInfo,#hobbiesInfo,#experienceInfo,#contactInfo{
+        font-size: 2vw;
+    }
+    #about{
+        background-image:linear-gradient(90deg,lightblue,rgb(25, 165, 165));
+    }
+    #skills{
+        background-image:linear-gradient(270deg,lightgreen,rgb(30, 168, 92));
+    }
+    #hobbies{
+       background-image:linear-gradient(90deg,rgb(255, 230, 0),rgb(212, 158, 21));
+    }
+    #experience{
+        background-image:linear-gradient(270deg,rgb(252, 168, 13),rgb(255, 107, 21));
+    }
+    #contact{
+        background-image:linear-gradient(90deg,rgb(255, 91, 62),rgb(184, 33, 33));
+    }
+    .card-img-overlay .card-title{
+        font-size: 1.8vw;
+    }
+    .card-img-overlay li{
+        font-size: 1.4vw;
+    }
+    #fb,#soc,#github,#tensors{
+        font-size:1.4vw;
+    }
+    
+}
+
+/*lg-above*/
+@media screen and (min-width:992px){
+    div .row{
+        min-height:300px;
+    }
+    #aboutInfo,#hobbiesInfo,#experienceInfo,#contactInfo{
+        font-size: 1.5vw;
+    }
+    #fb,#soc,#github,#tensors{
+        font-size: 1.5vw;
+    }
+    
+}
+
+/*hover*/
+@media (hover:hover){
+    .card-img-overlay{
+        background-color:rgba(56, 197, 120, 0.85);
+        opacity:0;
+    } 
+
+    /*Skills cards - specific*/
+    #robotics:hover{
+        opacity:1;
+    }
+
+    #webdev:hover{
+        opacity:1;
+    }
+
+    #programming:hover{
+        opacity:1;
+    }
+    /**/
+
+    #fb,#soc,#github,#tensors{
+        color:rgb(234, 234, 243);
+        border-color: rgb(234, 234, 243);
+        background-color: transparent;
+    }
+    
+    #fb:hover{
+        color:#4267B2;
+        background-color:rgb(234, 234, 243);
+        border-color: rgb(234, 234, 243);
+    }
+    #soc:hover{
+        color:orange;
+        background-color:rgb(33, 31, 31);
+        border-color:rgb(33, 31, 31);
+    }
+    #github:hover{
+        color:linen;
+        background-color:rgb(33, 31, 31);
+        border-color:rgb(33, 31, 31);
+    }
+    #tensors:hover{
+        color:seagreen;
+        border-color: rgb(234, 234, 243);
+        background-color:white;  
+    }
+
+    #mail,#instagram,#quora{
+        color:rgb(33, 31, 31);
+        transition: 0.3s;
+    }
+    #mail:hover,#instagram:hover,#quora:hover{
+        color:lightslategrey;
+    }
+    
+}
+
+ 
